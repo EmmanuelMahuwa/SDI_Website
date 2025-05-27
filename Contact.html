@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emanuel and Valiant's webdesign</title>
+    <link rel="stylesheet" href="styles_contacts.css">
+</head>
+<body class ="body_contact">
+    <div>
+        <nav>
+            <ul>
+                <a href="index.html" class="nav-link">Home</a>
+            </ul>
+        </nav>
+    </div>
+
+    <div class = "info">
+         <div class="heading">
+                <h2 class="title">CAPE TOWN</h2>
+        </div>
+        <div class="icon-wrapper">
+                            <i class="icon-location" aria-hidden="true"></i>
+                        </div><div class="desc-wrapper"><div class="desc">
+                            <b>Physical Address:</b> Rondebsoch, Cape Town, 7700</div>
+        </div>
+        <div class="icon-wrapper"><i class="icon-phone" aria-hidden="true">
+              </i>
+        </div>
+           <div class="desc-wrapper">
+           <div class="desc"><b>Phone:</b> (073) 909 1237
+        </div>
+        <i class="icon-phone" aria-hidden="true"></i>
+                    </div>
+                    <div class="desc-wrapper">
+                        <div class="desc"><b>Phone_2:</b> (071) 073 5933</div>
+        </div>
+        <div class="desc-wrapper">
+            <div class="desc">
+                <b>Email Address:</b> <a href="mailto:mhwema003@myuct.ac.za">mhwema003@myuct.ac.za</a>
+            </div>
+        </div>
+        </div>
+
+        <div class = "form_block">
+        <div class="mcb-column-inner mcb-column-inner-im1oxdr48 mcb-item-heading-inner">
+            <h2 class="title">CONTACT DETAILS</h2>
+        </div>
+        <div class="column_attr mfn-inline-editor clearfix">
+                <p>Fill in the form to contact us by email. All fields are required</p>
+        </div>
+            <form onsubmit="handleSubmit(event)" enctype="multipart/form-data" action="/contact/#contacts" method="post" class="formations" novalidate="novalidate" data-status="init">
+                <div style="display: none;"> <input type="hidden" name="_wpcf7" value="6"> 
+                    <input type="hidden" name="_wpcf7_version" value="5.6.2"> 
+                    <input type="hidden" name="_wpcf7_locale" value="en_US"> 
+                    <input type="hidden" name="_wpcf7_unit_tag" value="contacts"> 
+                    <input type="hidden" name="_wpcf7_container_post" value="148"> 
+                    <input type="hidden" name="_wpcf7_posted_data_hash" value=""> 
+                    <input type="hidden" name="_wpcf7_recaptcha_response" value="HFNzc4JE4fd2B_ZTUNGR0cGFBESXFHEUlua39eNzdMf05HWFZlc0ElZ0xvJG0Yd2BvZzEcU0RLHgIOCQh-SRNSZBltU0F6FCAVCAMeOjN7aixfbT4gATN4YARvPxgNFxUNUEsycUhvXWQTYlM6aQF5MRlVTxorM3ptEEs8SyoIGzYiYCkdU0RLU0c1S3FAFg"></div>
+                    <p><label> Enter your name<br> 
+                        <span class="wpcf7-form-control-wrap" 
+                            data-name="user-name"><input type="text" 
+                            name="user-name" value="" size="40" 
+                            class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" 
+                            aria-required="true" aria-invalid="false" required>
+                        </span>
+                        </label>
+                    </p><p>
+                        <label> Enter your email<br> <span class="wpcf7-form-control-wrap" data-name="your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required></span> </label></p><p>
+                    <label> About<br> <span class="wpcf7-form-control-wrap" data-name="your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span> 
+                    </label>
+                    </p><p>
+                    <label> Enter message<br> 
+                        <span class="wpcf7-form-control-wrap" data-name="e_message">
+                            <textarea name="e_message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" required>
+
+                            </textarea>
+                        </span>
+                    </label>
+                    </p>
+                    <p>
+                        <input type="submit" value="Submit" class="wpcf7-form-control has-spinner wpcf7-submit">
+                        <span class="wpcf7-spinner">
+
+                        </span>
+                    </p>
+                   
+                    <div class="wpcf7-response-output" aria-hidden="true">
+                </div>
+            </form>
+</div>
+    <script>
+    function handleSubmit(event) {
+      event.preventDefault(); // Prevent actual form submission
+
+      // You could add file validation here if needed
+
+      alert("Your file has been submitted successfully!");
+
+      // Optionally reset the form
+      event.target.reset();
+    }
+  </script>
+</body>
+</html>

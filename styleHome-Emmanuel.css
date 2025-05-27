@@ -1,0 +1,199 @@
+.nav-link {
+    color: #07080a;
+    text-decoration: none;
+    transition: color 0.2s;
+    color: rgb(var(--txt, var(--color_15, color_15)));
+    display: inline-block;
+    padding: 0 10px;
+    transition: var(--trans, color .4s ease 0s);
+    block-size: 35%;
+    color: white;
+    background: rgb(71, 81, 226);
+    border-top: 2px solid var(--primary-color);
+    border-radius: 3px;
+
+}
+.log_out{
+
+    color: #07080a;
+    text-decoration: none;
+    transition: color 0.2s;
+    color: rgb(var(--txt, var(--color_15, color_15)));
+    display: inline-block;
+    padding: 0 10px;
+    transition: var(--trans, color .4s ease 0s);
+    block-size: 35%;
+    color: white;
+    background: rgb(71, 81, 226);
+    border-top: 2px solid var(--primary-color);
+    border-radius: 3px;
+    
+ 
+}
+.log_out:hover {
+    background-color: aliceblue;
+    color: blue;
+}
+.header{
+    background-color: blueviolet;
+}
+a{
+    display: grid;
+
+}
+.nav-link:hover {
+    color: blue;
+    background-color: rgb(233, 218, 218);
+}
+
+
+img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    
+
+}
+.Home_body{
+    background-color: rgb(194, 194, 230);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin: 0;
+    
+}
+
+
+.login_Button {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 0.375rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: rgb(63, 63, 248);
+    color: white;
+
+}
+
+.login_Button:hover{
+    color: rgb(43, 37, 37);
+}
+
+form {
+    text-align: 50%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+.not_found_account {
+    grid-template-columns: 20%;
+}
+
+
+.log_welcome {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    text-align: center;
+}
+.sig_welcome {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    text-align: center;
+}
+
+#login-password {
+    background-color: rgb(203, 241, 241);
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.375rem;
+    width: 300px;
+}
+#confirm-password,
+#signup-password {
+    background-color: rgb(203, 241, 241);
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.375rem;
+    width: 300px;
+}
+
+#fullname {
+    background-color: rgb(203, 241, 241);
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.375rem;
+    width: 300px;
+    margin-bottom: 20px;
+}
+#signup-email {
+    background-color: rgb(203, 241, 241);
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.375rem;
+    width: 300px;
+    margin-bottom: 20px;
+
+}
+.signup {
+    padding: 0.5rem 1.5rem;       /* Proper button padding */
+    font-size: 1rem;              /* Slightly larger text */
+    font-weight: 600;             /* Bold for emphasis */
+    border-radius: 0.375rem;      /* Rounded corners */
+    border: none;                 /* Remove border */
+    cursor: pointer;              /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    background-color: rgb(63, 63, 248); /* Blue background */
+    color: white;                 /* White text */
+    text-align: center;           /* Center text */
+    display: inline-block;        /* Makes it a button shape */
+}
+
+.signup:hover {
+    color: rgb(45, 45, 180); /* Darken on hover */
+    transform: translateY(-2px);        /* Lift effect */
+}
+
+.signup:active {
+    background-color: rgb(35, 35, 140); /* Even darker on click */
+    transform: translateY(1px);         /* Slight press effect */
+}
+
+#login-email{
+    background-color: rgb(203, 241, 241);
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.375rem;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.container {
+    background-color: wheat;
+    max-width: 1200px;
+    margin:  20px;
+    padding: 0 1rem;
+}
+
+.auth-switch {
+    display: flex;
+    gap: 5px; /* Adds a bit of space between them */
+    align-items: center;
+}

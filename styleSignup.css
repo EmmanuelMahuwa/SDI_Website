@@ -1,0 +1,107 @@
+.sig_welcome {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    text-align: center;
+}
+
+#confirm-password,
+#signup-password {
+    background-color: rgb(203, 241, 241);
+    padding: 12px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 0.375rem;
+    width: 93%;
+}
+
+#fullname {
+    background-color: rgb(203, 241, 241);
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.375rem;
+    width: 93%;
+    margin-bottom: 20px;
+}
+#signup-email {
+    background-color: rgb(203, 241, 241);
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.375rem;
+    width: 93%;
+    margin-bottom: 20px;
+
+}
+.signup {
+    padding: 0.5rem 1.5rem;       /* Proper button padding */
+    font-size: 1rem;              /* Slightly larger text */
+    font-weight: 600;             /* Bold for emphasis */
+    border-radius: 0.375rem;      /* Rounded corners */
+    border: none;                 /* Remove border */
+    cursor: pointer;              /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    background-color: rgb(63, 63, 248); /* Blue background */
+    color: white;                 /* White text */
+    text-align: center;           /* Center text */
+    display: inline-block;        /* Makes it a button shape */
+    width: 100%;
+}
+
+.signup:hover {
+    color: rgb(45, 45, 180); /* Darken on hover */
+    transform: translateY(-2px);        /* Lift effect */
+}
+
+.signup:active {
+    background-color: rgb(35, 35, 140); /* Even darker on click */
+    transform: translateY(1px);         /* Slight press effect */
+}
+
+.container {
+    background-color: hwb(0 99% 1%);
+    border: 10px;
+    border-radius: 10px;
+    margin: 60px 0 0 400px;
+    
+    background-color: #ffffff;
+    padding: 20px 80px 20px 80px;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+#fullname,
+#signup-email,
+#signup-password,
+#confirm-password,
+.signup {
+    margin-bottom: 20px;
+   
+    padding: 12px 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #004aad, #2e8bc0);
+
+}
+h2 {
+    color:  #2e8bc0;
+    text-align: center;
+}
+
+.auth-switch {
+    text-align: center;
+}
+
+.signup {
+    max-width: 100%;
+}

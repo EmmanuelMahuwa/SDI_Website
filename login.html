@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emanuel and Valiant's (Login page)</title>
+  <link rel="stylesheet" href="styleLogin.css" />
+</head>
+<body>
+  <div class="container" id="login">
+    <form class="auth-form login-form" onsubmit="handleLogin(event)">
+      <h2 class="log_welcome">Welcome Back</h2>
+      <div class="form-group">
+        <label for="login-email">Email</label><br>
+        <input type="email" id="login-email" required />
+      </div>
+      <div class="form-group">
+        <label for="login-password">Password</label><br>
+        <input type="password" id="login-password" required />
+      </div>
+      <div class="form-group">
+        <label class="checkbox-label">
+          <input type="checkbox" id="remember-me" />
+          Remember me
+        </label>
+      </div>
+      
+      <button type="submit" class="signup">Log In</button>
+      
+      <p class="auth-switch">
+        Don't have an account? <a href="signup.html" data-tab="signup">Sign up</a>
+      </p>
+    </form>
+  </div>
+
+  <script>
+    function handleLogin(event) {
+      event.preventDefault();
+
+      // Here you could add real credential validation (skip for demo)
+
+      // Mark user as logged in
+      localStorage.setItem("isLoggedIn", "true");
+
+      // Redirect to homepage
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>

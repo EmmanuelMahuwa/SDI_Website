@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online Submissions</title>
+  <link rel="stylesheet" href="styleSubmissions.css" />
+</head>
+<body>
+    <div>
+        <a href="index.html" class="nav-link">Home</a>
+    </div>
+
+    <div class="submission-container">
+    <h1>Online Survey Submissions</h1>
+    <p>Page for online submissions of survey records to their respective SG offices.</p>
+
+
+    <form onsubmit="handleSubmit(event)" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="survey">Type of Cadastral Survey:</label>
+        <select>
+        <option>None</option>
+        <option>Subdivision</option>
+        <option>Consolidation</option>
+        <option>Beacon Relocation</option>
+        <option>Land Audit Report</option>
+        <option>Sectional Title</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="survey">SG Branch:</label>
+        <select>
+        <option>None</option>
+        <option>Limpopo</option>
+        <option>Mpumalanga</option>
+        <option>Gauteng</option>
+        <option>North West</option>
+        <option>Free State</option>
+        <option>Northern Cape</option>
+        <option>Kwazulu-Natal</option>
+        <option>Eastern Cape</option>
+        <option>Western Cape</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="survey">SAGC Member Type:</label>
+        <select>
+        <option>None</option>
+        <option>Professional Land Surveyor</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="company">SAGC Member Number:</label>
+        <input type="name" id="MemberNumber" required/>
+    </div>
+    <div class="form-group">
+        <label for="company">Name of company:</label>
+        <input type="name" id="CompanyName"/>
+    </div>
+
+
+
+    
+    <div class="form-group">
+        <label for="email">User Email Address:</label>
+        <input type="email" id="email" name="email" required />
+    </div>
+
+      <div class="form-group">
+        <label for="fileUpload">Select a file to upload:</label>
+        <input type="file" id="fileUpload" name="fileUpload" required />
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- JavaScript for popup -->
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault(); // Prevent actual form submission
+
+      // You could add file validation here if needed
+
+      alert("Your file has been submitted successfully!");
+
+      // Optionally reset the form
+      event.target.reset();
+    }
+  </script>
+</body>
+</html>
+

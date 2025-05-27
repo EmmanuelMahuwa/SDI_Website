@@ -1,0 +1,240 @@
+:root {
+    --primary-color: #fff; /* Fallback for border-top */
+}
+
+/* Navigation Links */
+.nav-link {
+    
+    color: white;
+    background: rgb(71, 81, 226);
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border-top: 2px solid var(--primary-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+    color: blue;
+    background-color: rgb(233, 218, 218);
+}
+
+/* Logout Button */
+.log_out {
+    color: white;
+    background: rgb(71, 81, 226);
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border-top: 2px solid var(--primary-color);
+    margin-left: auto;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+/* Header */
+.home_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: burlywood;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    z-index: 1000; /* keeps it above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* optional: adds a subtle shadow */
+}
+body {
+    width: 100%;
+}
+/* Page Title */
+.title_home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+.logo_text {
+    text-align: center;
+    color: rgb(165, 99, 13);
+}
+
+/* Section Headings */
+.h2_home {
+    text-align: center;
+    margin: 20px 0 10px 0;
+    font-size: 1.5em;
+}
+
+/* Main Content Section */
+.Home_content {
+    width: 100vw;         /* full viewport width */
+    background-color: #a06d6d;
+    padding: 20px;
+    border-radius: 0;     /* optional: remove if you want edge-to-edge */
+    margin-top: 20px;
+    box-sizing: border-box;
+    color: white;
+}
+
+/* Image Display */
+.image-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.image-row img {
+    height: 300px;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.home_img_1 {
+    width: 100%;  
+    height: auto;
+    margin: 0;
+    display: block;
+    border-radius: 0;
+}
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+
+.image-label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+body, .Home_body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(194, 194, 230);
+    margin: 2px;
+    padding: 0;
+
+}
+
+.home_container {
+    width: 100vw;
+    margin: 0;
+    padding-top: 22px;
+    box-sizing: border-box;
+}
+.home_div_1 {
+    position: relative;
+    background-color: rgba(98, 31, 136, 0.144);
+    margin-top: 68px;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+
+
+
+
+
+.not_found_account {
+    grid-template-columns: 20%;
+}
+
+
+
+.auth-switch {
+    display: flex;
+    gap: 5px; /* Adds a bit of space between them */
+    align-items: center;
+    
+}
+
+.home_main_cover {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    padding: 1px;
+    margin-top: 0;
+}
+
+/* General column styling */
+.home_cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(https://storage.googleapis.com/shopify-zero-narvar/fkns0wbaujkqadt9cvymbx94itm9);
+    padding: 10px;
+}
+
+/* Borders to match dotted lines in screenshot */
+.home_cover:nth-child(2) {
+    border-left: 2px dotted black;
+    border-right: 2px dotted black;
+}
+
+/* UCT Logo styling */
+#uct_logo {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 220px;
+}
+
+/* Title at the top */
+.title {
+    margin-top: 65px;
+    text-align: center;
+    background-color: antiquewhite;
+    margin-bottom: 0;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.img_1_text {
+    text-align: center; 
+    margin-top: 30px;
+    color: rgb(165, 99, 13);
+}
+
+.deeds_img {
+    margin-left: 70px;
+    margin-right: 10px;
+    width: 300px;
+    height: 300px;
+}
+.h3_home,
+.p_content {
+    text-align: center;
+}
+
+.deeds_img,
+.cadastral_img{
+    width: 300px;
+}
+
+.image-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    width: 350px;
+    height: 350px;
+    padding: 0;
+    background-color: black;
+}

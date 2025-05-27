@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styleHome.css" />
+    <title >Emanuel and Valiant's webdesign</title>
+    <style>
+        .log_out {
+        color: red;
+        font-weight: bold;
+        text-decoration: none;
+        margin-left: 10px;
+        display: none; /* hidden by default */
+        }
+    </style>
+</head>
+<body class="Home_body">
+<div class="home_container">
+    <div class="home_header">
+        <p class="nav-link">Home</p>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="https://mkbmer002.github.io/PublicViewMap/" class="nav-link" target="_blank" rel="noopener noreferrer">View WebMap</a>
+        <a href="https://mkbmer002.github.io/ILIS/" 
+            class="nav-link" id="webmapLink" style="display: none;" target="_blank" rel="noopener noreferrer">WebMap</a>
+        <a href="submissions.html" class="nav-link" id="submissionLink" style="display: none;">Online Submissions</a>
+        <a href="metadata.html" class="nav-link">Metadata</a>
+        <a href="Contact.html" class="nav-link">Contact</a>
+        <label for="land-use">Users account:</label>
+        <select id="land-use" name="land-use" onchange="handleSelect(this)">
+        <option value="unregistered">Unregistered</option>
+        <option value="registered">Registered</option>
+        </select>
+
+        <a href="#" id="logoutLink" class="log_out" onclick="logout()">Logout</a>
+    </div>
+
+    <div>
+        
+        <h1 class="title">Integrated Land Information System</h1>
+        <div class="home_main_cover">
+            
+
+            <div class="home_cover" style="">
+                <img class="home_img_1" id="uct_logo" src="images/UCT logo circular black large.jpg">
+                <p class="logo_text" style="text-align: centre;">SDI Project 2025<br> APG3039B</p>
+            </div>
+            <div class="home_cover">
+                
+                <p class="title_home" style="text-align: centre;">Welcome to <br>ILIS</p>
+                <img class="home_img_1" src="images/WhatsApp_Home.gif.jpg" alt="hello">
+                <p class="img_1_text" style="">
+                    Our platform simplifies cadastral and deed access, offering seamless submission of survey records and subdivision applications to name a few.
+                </p>
+
+            </div>
+            <div class="home_cover">
+            
+            </div>
+        </div>
+        
+            
+        <div class="Home_content"> 
+            <h2 class="h2_home">Register an account for full access to cadastral and deeds records</h2>
+            <h3 class="h3_home">What you can find on our Intergrated Land Information <br>System (ILIS)</h3>
+            <p class="p_content">Cadastral maps are foundational spatial data, since they map legal entities land parcels and their <br>
+            related ownership records (deeds). Access cadastral records together with the beeds attached to 
+            <br>properties after registration</p> 
+
+            <div class="image-row">
+            <div class="image-block">
+                <label class="image-label">Cadastral records</label>
+                <img clas="cadastral_img" src="images/home_img_2.gif"/>
+            </div>
+            <div class="image-block">
+                <label class="image-label">Deeds records</label>
+                <img  src="images/home_img_4.gif"/>
+            </div>
+        </div>
+        
+    </div>
+    <div>
+        <p>Stay with us.</p>
+    </div>
+
+    <script>
+        function handleSelect(element) {
+            if (element.value === "registered") {
+                localStorage.setItem("isRegistered", "true");
+                window.location.href = "signup.html";
+            }
+        }
+
+        function logout() {
+            localStorage.removeItem("isRegistered");
+            document.getElementById("logoutLink").style.display = "none";
+            document.getElementById("webmapLink").style.display = "none";
+            document.getElementById("submissionLink").style.display = "none";
+            document.getElementById("land-use").value = "unregistered";
+        }
+
+        window.onload = function () {
+            const isRegistered = localStorage.getItem("isRegistered") === "true";
+            const logoutLink = document.getElementById("logoutLink");
+            const landUseSelect = document.getElementById("land-use");
+            const webmapLink = document.getElementById("webmapLink");
+            const submissionLink = document.getElementById("submissionLink");
+
+            if (isRegistered) {
+                logoutLink.style.display = "inline";
+                landUseSelect.value = "registered";
+                webmapLink.style.display = "inline-block";
+                submissionLink.style.display = "inline-block";
+            } else {
+                logoutLink.style.display = "none";
+                webmapLink.style.display = "none";
+                submissionLink.style.display = "none";
+                landUseSelect.value = "unregistered";
+            }
+        };
+    </script>
+
+</div>
+    
+</body>
+</html>
