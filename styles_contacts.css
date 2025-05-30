@@ -28,16 +28,16 @@ nav ul li {
     display: inline-block;
     padding: 10px 20px;
     margin-bottom: 20px;
-    background-color: #007bff;
-    color: #5a2f2f;
+    background-color: brown;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .nav-link:hover {
-    color: #007bff;
-    background-color: #0056b3;
+    color: rgb(179, 127, 127);
+    background-color: white;
 }
 
 /* Contact info section */

@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f9f9;
+    background-color: #f7e4dc;
     color: #333;
     padding: 40px;
 }
@@ -15,8 +15,9 @@ body {
 }
 
 h1 {
-    color: #004aad;
+    color: brown;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 p {
@@ -43,7 +44,7 @@ input[type="file"] {
 }
 
 button {
-    background-color: #004aad;
+    background-color: brown;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -54,7 +55,7 @@ button {
 }
 
 button:hover {
-    background-color: #00327a;
+    background-color: rgb(179, 127, 127);
 }
 
 .nav-link {
@@ -68,7 +69,7 @@ button:hover {
     display: inline-block;
     padding: 10px 20px;
     margin-bottom: 20px;
-    background-color: #007bff;
+    background-color: brown;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -76,6 +77,6 @@ button:hover {
 }
 
 .nav-link:hover {
-    color: #007bff;
-    background-color: #0056b3;
+    color: rgb(179, 127, 127);
+    background-color: white;
 }

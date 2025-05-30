@@ -6,7 +6,7 @@
 .nav-link {
     
     color: white;
-    background: rgb(71, 81, 226);
+    background: brown;
     text-decoration: none;
     display: inline-block;
     padding: 8px 15px;
@@ -24,7 +24,7 @@
 /* Logout Button */
 .log_out {
     color: white;
-    background: rgb(71, 81, 226);
+    background: brown;
     text-decoration: none;
     display: inline-block;
     padding: 8px 15px;
